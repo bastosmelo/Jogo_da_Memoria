@@ -1,0 +1,94 @@
+body, html {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: #343a40;
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+    flex-grow: 1;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.card {
+    width: 100px;
+    height: 100px;
+    background-color: #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    transition: transform 0.3s;
+}
+
+.card img {
+    width: 80%;
+    height: 80%;
+    display: none;
+    position: absolute;
+}
+
+.card.flipped img {
+    display: block;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1em;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#attempts, #history {
+    font-size: 1.2em;
+    margin-top: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #343a40;
+    color: lightgray;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+  }
+  
+.social-icons {
+text-align: center;
+margin-bottom: 20px;
+}
+
+.social-icons img {
+width: 30px;
+height: 30px;
+border-radius: 50%;
+border: 1px solid #333;
+margin: 0 5px;
+cursor: pointer;
+}
